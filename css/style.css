@@ -1,0 +1,15 @@
+@keyframes logoGrow {
+    from {
+      width: 25px;
+      opacity: 0;
+    }
+    to {
+      width: 475px;
+      opacity: 1;
+    }
+  }
+  
+  .logo {
+    animation: logoGrow 5s forwards;
+  }
+  

@@ -87,11 +87,10 @@ main h1 {
 
 
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 5px; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center; 
-    align-items: center; 
+    gap: 5px;
   }
 
   .gallery img {
@@ -107,10 +106,6 @@ main h1 {
   }
 
 
-  .gallery img:nth-child(5) {
-    grid-column: 1 / span 2; 
-    justify-self: center; 
-  }
 
 
   @media (min-width: 900px) {
@@ -151,29 +146,12 @@ main h1 {
     margin-right: 20px; 
   }
 
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: center;
-    justify-items: end;
-    grid-gap: 20px;
-  } 
 
   .card h3 {
     text-align: left; 
     margin-right: 120px; 
   }
 
-
-  .gallery img:nth-child(4) {
-    margin-right: auto;
-    margin-left: 150px;
-  }
-  .gallery img:nth-child(5) {
-    grid-column: auto; 
-    margin-left: 300px;
-  }
-  
   header {
     position: sticky;
     top: 0; 

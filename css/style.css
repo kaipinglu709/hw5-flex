@@ -167,7 +167,7 @@ color: #0000FF; /* Blue color for links */
 
 /* Media query for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .logo {
+  #logo {
       animation: none; /* Disables animation */
   }
 }
